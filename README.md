@@ -32,7 +32,7 @@ This project was built collaboratively as part of academic and practical learnin
 1. Clone the repository:
 
    ```bash
-   git clone (https://github.com/shehap0/MovieApp)
+   git clone https://github.com/shehap0/MovieApp
    ```
 2. Open **Android Studio**
 3. Click **Open** and select the project folder
