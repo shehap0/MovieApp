@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Title -->
+        <TextView
+            android:text="🎬 Movie Verse"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#66000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="25dp"/>
+
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/edtUsername"
+            android:hint="Username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textPersonName"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+
+            app:backgroundTint="#B71C1C"
+            app:cornerRadius="14dp"
+            app:rippleColor="@android:color/transparent"
+            app:elevation="0dp"/>
+
+
+
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  OR  "
+                android:textColor="#888888" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#CCCCCC" />
+        </LinearLayout>
+
+        <!-- Google Login -->
+        <LinearLayout
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/rounded_social"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/google_logo"
+                android:layout_marginEnd="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Google"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Twitter Login -->
+        <LinearLayout
+            android:id="@+id/btnTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/rounded_social"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@drawable/twitter_logo"
+                android:layout_marginEnd="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Twitter"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Facebook Login -->
+        <LinearLayout
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/rounded_social"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/facebook_logo"
+                android:layout_marginEnd="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Facebook"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Signup -->
+        <TextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign up"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#66000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+    </LinearLayout>
+
+</ScrollView>

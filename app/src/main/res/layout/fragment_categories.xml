@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F5F7"
+    android:paddingTop="24dp"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtCategoriesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/categoriesHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎬 Select a category to explore movies"
+        android:textSize="14sp"
+        android:textColor="#888"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+
+    <!-- Recycler -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="6dp"
+        android:paddingBottom="18dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:textSize="16sp"
+            android:textColor="#6A5ACD"
+            android:padding="8dp" />
+
+        <!-- Poster -->
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:background="#000000" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginTop="16dp" />
+
+        <!-- Year -->
+        <TextView
+            android:id="@+id/txtYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginTop="4dp" />
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/txtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:layout_marginTop="6dp" />
+
+        <!-- Duration -->
+        <TextView
+            android:id="@+id/txtDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:layout_marginTop="2dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#424242"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

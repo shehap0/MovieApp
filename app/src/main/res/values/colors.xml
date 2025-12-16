@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App background -->
+    <color name="background">#ECEFF1</color>
+    <color name="card_bg">#FFFFFF</color>
+
+    <!-- Primary brand -->
+    <color name="primary">#5B4BC4</color>
+    <color name="primary_dark">#4336A8</color>
+    <color name="accent">#FFC107</color>
+
+    <!-- Text -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="nav_color">#5B50D6</color>
+
+
+</resources>
